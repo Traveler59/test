@@ -1,0 +1,41 @@
+body{
+  background-color: #e9e9e9;
+}
+#app{
+  margin: 100px auto;
+  width: 1000px;
+  height: 500px;
+  box-shadow:  0 0 3px gray;
+  background-color: white;
+  border-radius: 25px;
+}
+#meal{
+  margin: 20px;
+  float: left;
+}
+h3{
+  text-align: center;
+}
+.btn-group-vertical{
+  width: 200px;
+  margin-right: 150px;
+  margin-top: 20px;
+  float: right;
+}
+.progress{
+  width: 500px;
+  width: 70%;
+  margin: auto;
+}
+.img-rounded{
+  height: 300px;
+}
+.alert{
+  display: none;
+}
+.info{
+  float: right;
+  margin-top: 100px;
+  margin-right: 50px;
+  font-size: 12pt;
+}

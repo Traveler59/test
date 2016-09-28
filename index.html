@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+      <title>Test</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="style.css">
+
+      <script type="text/javascript" src="http://knockoutjs.com/downloads/knockout-3.4.0.js"></script>
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+  </head>
+  <body>
+    <div class="alert alert-success fade in" >
+      <strong>Поздравляем!</strong>
+      <span data-bind="text: rightAnswers"></span> Правильных ответов из
+      <span data-bind="text: availableMeals.length"></span>
+    </div>
+    <div id="app">
+      <div id="meal">
+        <img class="img-rounded" width="400px"  data-bind="attr:{src: currentItem().img}" />
+        <h3 data-bind="text: currentItem().mealName"></h3>
+
+      </div>
+      <div class="info">Выберите подходящее к блюду вино из предложенных вариантов:</div>
+      <div class="btn-group btn-group-vertical">
+        <button class="btn btn-default" data-wine="Red" data-bind="click: check">Красное сухое</button>
+        <button class="btn btn-default" data-wine="White" data-bind="click: check">Белое сухое</button>
+        <button class="btn btn-default" data-wine="Sweet" data-bind="click: check">Сладкое</button>
+      </div>
+
+      <div class="progress">
+       <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"></div>
+      </div>
+
+    </div>
+
+    <script src="index.js"></script>
+
+  </body>
+</html>
