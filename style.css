@@ -31,7 +31,8 @@ h3{
   height: 300px;
 }
 .alert{
-  display: none;
+  padding-top: 30px;
+  visibility: hidden;
 }
 .info{
   float: right;

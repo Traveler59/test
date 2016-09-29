@@ -27,15 +27,16 @@ function ReservationsViewModel() {
     }
 
     self.showResults = function() {
-      if(self.rightAnswers() != self.availableMeals.length)$( "strong" ).html("");
-      $( ".alert" ).slideDown();
+      if(self.rightAnswers() != self.availableMeals.length)
+        document.getElementsByTagName( "strong" )[0].textContent  = "";
+      document.getElementsByClassName('alert')[0].style.visibility = "visible";
     }
 
     self.updateProgressBar = function() {
       var value = (self.num + 1) * 100 / self.availableMeals.length;
-      progressBar = $( ".progress-bar" );
-      progressBar.css("width", value+'%');
-      progressBar.attr('aria-valuenow', value);
+      progressBar = document.getElementsByClassName( "progress-bar" )[0];
+      progressBar.style.width = value+'%';
+      progressBar.setAttribute("aria-valuenow",value);
     }
 }
 
