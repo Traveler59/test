@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+      "module": "commonjs",
+      "noImplicitAny": true,
+      "removeComments": true,
+      "preserveConstEnums": true,
+      "outFile": "script.js"
+    },
+    "files": [
+      "knockout.d.ts",
+      "script.ts"
+    ],
+    "compileOnSave": true,
+    "buildOnSave": true
+}
