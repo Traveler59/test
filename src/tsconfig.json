@@ -7,7 +7,7 @@
       "outFile": "script.js"
     },
     "files": [
-      "knockout.d.ts",
+      "typings/knockout.d.ts",
       "script.ts"
     ],
     "compileOnSave": true,

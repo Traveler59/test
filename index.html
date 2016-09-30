@@ -25,9 +25,9 @@
       </div>
       <div class="info">Выберите подходящее к блюду вино из предложенных вариантов:</div>
       <div class="btn-group btn-group-vertical">
-        <button class="btn btn-default" data-wine="Red" data-bind="click: check">Красное сухое</button>
-        <button class="btn btn-default" data-wine="White" data-bind="click: check">Белое сухое</button>
-        <button class="btn btn-default" data-wine="Sweet" data-bind="click: check">Сладкое</button>
+        <button class="btn btn-default" data-bind="click: function() { check('Red') }">Красное сухое</button>
+        <button class="btn btn-default" data-bind="click: function() { check('White') }">Белое сухое</button>
+        <button class="btn btn-default" data-bind="click: function() { check('Sweet') }">Сладкое</button>
       </div>
 
       <div class="progress">
